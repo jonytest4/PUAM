@@ -190,50 +190,59 @@ namespace PUAM_1.Controllers
             bool registrado;
             string mensaje;
 
-            if (estudiante.Clave == estudiante.ConfirmarClave)
+            if (estudiante.Nombres == null || estudiante.Apellidos == null || estudiante.Cedula == null || estudiante.Carrera == null || estudiante.Semestre == null || estudiante.Coordinador == null || estudiante.Clave == null || estudiante.ConfirmarClave == null)
             {
-                estudiante.Clave = ConvertirSha256(estudiante.Clave);
+                mensaje = "Campos vacíos";
             }
             else
             {
-                //viewdata envia datos del controladorhacia la vista
-                ViewData["Mensaje"] = "Las contraseñas no coinciden";
-                return View();
-            }
+                if (estudiante.Clave == estudiante.ConfirmarClave)
+                {
+                    estudiante.Clave = ConvertirSha256(estudiante.Clave);
+                }
+                else
+                {
+                    //viewdata envia datos del controladorhacia la vista
+                    ViewData["Mensaje"] = "Las contraseñas no coinciden";
+                    return View();
+                }
 
-            using (SqlConnection cn = new SqlConnection(cadena))
-            {
-                SqlCommand cmd = new SqlCommand("sp_RegistrarEstudiante",cn);
-                cmd.Parameters.AddWithValue("Nombre",estudiante.Nombres);
-                cmd.Parameters.AddWithValue("Apellido", estudiante.Apellidos);
-                cmd.Parameters.AddWithValue("Cedula", estudiante.Cedula);
+                using (SqlConnection cn = new SqlConnection(cadena))
+                {
+                    SqlCommand cmd = new SqlCommand("sp_RegistrarEstudiante", cn);
+                    cmd.Parameters.AddWithValue("Nombre", estudiante.Nombres);
+                    cmd.Parameters.AddWithValue("Apellido", estudiante.Apellidos);
+                    cmd.Parameters.AddWithValue("Cedula", estudiante.Cedula);
 
-                cmd.Parameters.AddWithValue("Carrera", estudiante.Carrera);
+                    cmd.Parameters.AddWithValue("Carrera", estudiante.Carrera);
 
 
-                cmd.Parameters.AddWithValue("Semestre", estudiante.Semestre);
-                cmd.Parameters.AddWithValue("Coordinador", estudiante.Coordinador);
-                cmd.Parameters.AddWithValue("Clave", estudiante.Clave);
-                cmd.Parameters.Add("Registrado", SqlDbType.Bit).Direction = ParameterDirection.Output;
-                cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 100).Direction = ParameterDirection.Output;
+                    cmd.Parameters.AddWithValue("Semestre", estudiante.Semestre);
+                    cmd.Parameters.AddWithValue("Coordinador", estudiante.Coordinador);
+                    cmd.Parameters.AddWithValue("Clave", estudiante.Clave);
+                    cmd.Parameters.Add("Registrado", SqlDbType.Bit).Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 100).Direction = ParameterDirection.Output;
 
-                cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandType = CommandType.StoredProcedure;
 
-                cn.Open();
-                cmd.ExecuteNonQuery();
-                registrado = Convert.ToBoolean(cmd.Parameters["Registrado"].Value);
-                mensaje = cmd.Parameters["Mensaje"].Value.ToString();
+                    cn.Open();
+                    cmd.ExecuteNonQuery();
+                    registrado = Convert.ToBoolean(cmd.Parameters["Registrado"].Value);
+                    mensaje = cmd.Parameters["Mensaje"].Value.ToString();
+                }
+                ViewData["Mensaje"] = mensaje;
+                if (registrado)
+                {
+                    //Login=nombre de la vista, Acceso = nombre del controlado
+                    return RedirectToAction("LoginEstudiante", "Acceso");
+                }
+                else
+                {
+                    return View();
+                }
             }
             ViewData["Mensaje"] = mensaje;
-            if (registrado)
-            {
-                //Login=nombre de la vista, Acceso = nombre del controlado
-                return RedirectToAction("LoginEstudiante","Acceso");
-            }
-            else
-            {
-                return View();
-            }
+            return View();
         }
         [HttpPost]
         public ActionResult LoginEstudiante(Estudiante estudiante)
