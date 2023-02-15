@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PUAM_1
+build_property.RootNamespace = PUAM_1
+build_property.ProjectDir = D:\Git\PUAM\PUAM-1\PUAM-1\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Git\PUAM\PUAM-1\PUAM-1
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Acceso/LoginAdulto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXExvZ2luQWR1bHRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Acceso/LoginEstudiante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXExvZ2luRXN0dWRpYW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Acceso/RegistrarAdulto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXFJlZ2lzdHJhckFkdWx0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Acceso/RegistrarEstudiante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXFJlZ2lzdHJhckVzdHVkaWFudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Adulto/Clases.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR1bHRvXENsYXNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Adulto/ContenidoA.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR1bHRvXENvbnRlbmlkb0EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Adulto/Inscripcion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR1bHRvXEluc2NyaXBjaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Adulto/Nosotros.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR1bHRvXE5vc290cm9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Estudiante/ContenidoE.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxDb250ZW5pZG9FLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Estudiante/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxSZWdpc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git/PUAM/PUAM-1/PUAM-1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-xwnn3jsxh3
