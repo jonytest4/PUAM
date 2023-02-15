@@ -30,14 +30,14 @@
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
-                            <input type="text" name="Cedula" class="form-control input_user" value="" placeholder="Cedula">
+                            <input type="text" name="Cedula" class="form-control input_user" value="" placeholder="Cedula" required>
                         </div>
                         <div class="input-group mb-2">
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fas fa-key"></i></span>
                             </div>
                             <!--en el name, nombre de la propiedad(atributo de la clase del modelo) a usar-->
-                            <input type="password" name="Clave" class="form-control input_pass" value="" placeholder="Contraseña">
+                            <input type="password" name="Clave" class="form-control input_pass" value="" placeholder="Contraseña" required>
                         </div>
                         <!--mensaje de error -->
                         @if (ViewData["Mensaje"] != null)
